@@ -1,0 +1,9 @@
+<mat-card *ngFor="let blogy of listblog">
+    <mat-card-title>{{blogy.name}}
+        </mat-card-title>
+        <mat-card-content>
+            {{blogy.content}}
+            </mat-card-content>
+            <button mat-raised-button color="primary" (click)="oneditTest()">edit</button>
+            <button mat-raised-button color="primary">delete</button>
+    </mat-card>

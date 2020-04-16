@@ -1,0 +1,42 @@
+<p>formcreate works!</p>
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success" (click)="saveemployee()">add</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form  [formGroup]="blogform" (ngSubmit)="saveblog()"
+            >
+    
+    <br>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="name">title</label>
+               <input type="text" 
+               id="title" 
+               formControlName="title"
+               class="form-control">
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="content">description</label>
+               <input type="text" 
+               id="content" 
+               formControlName="content"
+               class="form-control">
+    </div>
+    </div>
+    </div>
+  
+    </form>
+    </div>
+    </div>
